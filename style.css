@@ -1,0 +1,141 @@
+:root {
+      --dark-cyan: hsl(158, 36%, 37%);
+      --cream: hsl(30, 38%, 92%);
+      --very-dark-blue: hsl(212, 21%, 14%);
+      --dark-grayish-blue: hsl(228, 12%, 48%);
+      --white: hsl(0, 0%, 100%);
+      font-size: 0.875rem;
+  }
+
+
+img{
+      width: 100%;
+}
+
+
+h1{
+      font-size: 2.285rem;
+      font-weight: 700;
+      font-family: "Fraunces";
+      padding-top: 0.5rem;
+}
+
+
+h4{
+      font-size: 1rem;
+      color: var(--dark-grayish-blue);
+      letter-spacing: 0.4rem;
+}
+
+
+body{
+      background-color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+}
+
+.caixa-principal{
+      width: 345px;
+      background-color: var(--white);
+      display: flex;
+      flex-direction: column;
+      border-radius: 0.7rem;
+}
+
+.caixa-principal .imagem img{
+      border-top-right-radius: 0.65rem;
+      border-top-left-radius: 0.65rem;
+}
+
+.caixa-descricao{
+      padding: 1.2rem 1.5rem;
+}
+
+.descricao-produto{
+      color: var(--dark-grayish-blue);
+      padding: 1rem 0;
+      
+}
+
+.precos{
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      padding: 1.2rem 0;
+  }
+
+.precos .preco-novo{
+      color: var(--dark-cyan);
+      font-weight: 700;
+      font-size: 2.2rem;
+      font-family: "Fraunces";
+}
+
+.precos .preco-antigo{
+      color: var(--dark-grayish-blue);
+      font-size: 1.1rem;
+      text-decoration: line-through;
+}
+
+.botao-add{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background-color: var(--dark-cyan);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1rem 0;
+      border: none;
+      border-radius: 0.5rem;
+      gap: 1rem;
+
+}
+
+.botao-add img{
+      width: 1rem;
+}
+
+.botao-add:hover{
+      background-color: rgb(7, 57, 47);
+      cursor: pointer;
+}
+
+
+@media screen and (min-width: 1024px) {
+      h4{
+            font-size: 0.8rem;
+      }
+
+
+      .caixa-principal{
+            width: 555px;
+            display: flex;
+            flex-direction: row;
+      }
+
+      .caixa-principal .imagem img {
+            border-radius: 0;
+            border-top-left-radius: 0.65rem;
+            border-bottom-left-radius: 0.65rem;
+            height: 100%;
+      }
+
+      .caixa-principal .imagem{
+            flex: 1.2;
+      }
+
+      .caixa-descricao{
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+      }
+
+      
+}
